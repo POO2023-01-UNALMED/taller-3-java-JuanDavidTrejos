@@ -23,11 +23,13 @@ public class Control {
     public void volumenDown() {
         tv.volumenDown();
     }
-	
+	public void setCanal(int Canal) {
+		tv.setCanal(Canal);
+	}
     
-    public void enlazar(TV televisor) {
-    	tv = televisor;
-    	televisor.setControl(this);
+    public void enlazar(TV tv) {
+    	this.tv = tv;
+    	tv.setControl(this);
     }
     
     
